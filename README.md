@@ -1,4 +1,5 @@
-This document aims to give you a very simple starting point for setting up a java project that you will build with ant. 
+This project aims to give you a very simple starting point for setting up a java project that you will build with ant. 
+I will hopefully expand on it as I learn more about the magic of ant. :)
 
 ###Prequisites
 
