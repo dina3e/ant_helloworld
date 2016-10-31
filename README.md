@@ -10,7 +10,7 @@ yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel -y
 ```
 ###Setup the HelloWorld java application
 
-We want to separate the source from the generated files, so our java source files will be in src folder. All generated files should be under build, and there splitted into several subdirectories for the individual steps: classes for our compiled files and jar for our own JAR-file.
+We want to separate the source from the generated files, so our java source files will be in src folder. All generated files should be under build, and there split into several subdirectories for the individual steps: classes for our compiled files and jar for our own JAR-file.
 
 Create the src directory for our project ( from what ever you java project root is ). 
 ```
@@ -50,9 +50,9 @@ jar cfm build/jar/HelloWorld.jar myManifest -C build/classes .
 java -jar build/jar/HelloWorld.jar
 ```
 
-###Anitfying the build process
+###Antifying the build process
 
-After finishing the java-only step we have to think about our build process. We have to compile our code, otherwise we couldn't start the program. Oh - "start" - yes, we could provide a target for that. Weshould package our application. Now it's only one class - but if you want to provide a download, no one would download several hundreds files ... (think about a complex Swing GUI - so let us create a jar file. A startable jar file would be nice ... And it's a good practise to have a "clean" target, which deletes all the generated stuff. Many failures could be solved just by a "clean build".
+After finishing the java-only step we have to think about our build process. We have to compile our code, otherwise we couldn't start the program. Oh - "start" - yes, we could provide a target for that. We should package our application. Now it's only one class - but if you want to provide a download, no one would download several hundreds files ... (think about a complex Swing GUI - so let us create a jar file. A startable jar file would be nice ... And it's a good practise to have a "clean" target, which deletes all the generated stuff. Many failures could be solved just by a "clean build".
 
 By default Ant uses build.xml as the name for a buildfile, so our .\build.xml would be:
 ```
